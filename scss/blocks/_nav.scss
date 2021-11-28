@@ -17,6 +17,10 @@
           text-decoration: none;
           color: white;
           text-transform: capitalize;
+          transition: 0.3s ease;
+        }
+        a:hover {
+          color:#112D57;
         }
       }
     }
@@ -31,6 +35,11 @@
         padding: 7px 23px;
         border: 1px solid white;
         border-radius: 27px;
+        transition: 0.5s ease;
+      }
+      .sign__btn:hover {
+        background-color: white;
+        color:#112D57;
       }
       .menu_btn {
         display: none;

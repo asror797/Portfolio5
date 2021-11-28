@@ -56,9 +56,19 @@
       .start {
         background-color: white;
         color: #112D57;
+        transition:0.3s ease;
+      }
+      .start:hover {
+        background-color: transparent;
+        color:white;
       }
       .try {
         color: white;
+        transition: 0.3s ease;
+      }
+      .try:hover {
+        color:#112D57;
+        background-color: white;
       }
     }
   }

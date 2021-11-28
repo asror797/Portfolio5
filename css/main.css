@@ -94,6 +94,12 @@ html {
   text-decoration: none;
   color: white;
   text-transform: capitalize;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.nav .nav__itm .nav__menu li a:hover {
+  color: #112D57;
 }
 
 .nav .nav__itm .nav__btns {
@@ -115,6 +121,13 @@ html {
   padding: 7px 23px;
   border: 1px solid white;
   border-radius: 27px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.nav .nav__itm .nav__btns .sign__btn:hover {
+  background-color: white;
+  color: #112D57;
 }
 
 .nav .nav__itm .nav__btns .menu_btn {
@@ -240,10 +253,24 @@ html {
 .hero .hero__itm .header__btns .start {
   background-color: white;
   color: #112D57;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.hero .hero__itm .header__btns .start:hover {
+  background-color: transparent;
+  color: white;
 }
 
 .hero .hero__itm .header__btns .try {
   color: white;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.hero .hero__itm .header__btns .try:hover {
+  color: #112D57;
+  background-color: white;
 }
 
 @media only screen and (max-width: 375px) {
@@ -389,11 +416,34 @@ html {
   margin-bottom: 11px;
 }
 
-.cards .cards__itm .cards__box .card-one::after {
-  content: " ";
-  width: 45px;
-  height: 45px;
+.cards .cards__itm .cards__box .card-one::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 125px;
   background-image: url("./../img/alarm-light.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cards .cards__itm .cards__box .card-two::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 125px;
+  background-image: url("./../img/alarm-light.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cards .cards__itm .cards__box .card-three::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 125px;
+  background-image: url("./../img/alarm-light.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* phone */
@@ -403,7 +453,7 @@ html {
     padding: 35px 0 0 0;
   }
   .cards .container {
-    max-width: 305px;
+    max-width: 375px;
     margin: 0 auto;
     padding: 0 5px;
   }
@@ -420,6 +470,10 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
+  .cards .container .cards__itm .cards__heading {
+    padding: 0 7px;
+    font-size: 21px;
+  }
   .cards .container .cards__itm .cards__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -433,6 +487,7 @@ html {
             align-items: center;
   }
   .cards .container .cards__itm .cards__box .card {
+    max-width: 305px;
     margin-bottom: 35px;
   }
 }

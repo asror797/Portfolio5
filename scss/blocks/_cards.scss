@@ -42,13 +42,32 @@
           }
         }
       }
-      .card-one {
-        &::after {
-          content:" ";
-          width:45px;
-          height:45px;
-          background-image: url("./../img/alarm-light.png");
-        }
+      .card-one::before {
+        content:"";
+        display: block;
+        width:75px;
+        height:125px;
+        background-image: url("./../img/alarm-light.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .card-two::before {
+        content:"";
+        display: block;
+        width:75px;
+        height:125px;
+        background-image: url("./../img/alarm-light.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .card-three::before {
+        content:"";
+        display: block;
+        width:75px;
+        height:125px;
+        background-image: url("./../img/alarm-light.png");
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
 
@@ -62,7 +81,7 @@
     width:100%;
     padding:35px 0 0 0;
     .container {
-      max-width:305px;
+      max-width:375px;
       margin:0 auto;
       padding:0 5px;
       .cards__itm {
@@ -70,11 +89,16 @@
         display:flex;
         flex-direction:column;
         align-items:center;
+        .cards__heading {
+          padding: 0 7px;
+          font-size:21px;
+        }
         .cards__box {
           display:flex;
           flex-direction: column;
           align-items:center;
           .card {
+            max-width:305px;
             margin-bottom:35px;
           }
 
