@@ -309,4 +309,131 @@ html {
     display: none;
   }
 }
+
+.cards {
+  width: 100%;
+  padding: 75px 0 0 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+.cards .cards__itm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .cards__itm .cards__heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.cards .cards__itm .cards__box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+}
+
+.cards .cards__itm .cards__box .card {
+  max-width: 375px;
+  padding: 51px 39px;
+  border-radius: 9px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.cards .cards__itm .cards__box .card:hover {
+  background-image: linear-gradient(45deg, #37BDA6, #CB1AE8);
+  color: white;
+}
+
+.cards .cards__itm .cards__box .card .card__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.cards .cards__itm .cards__box .card .card__wrap .card__heading {
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 11px;
+}
+
+.cards .cards__itm .cards__box .card-one::after {
+  content: " ";
+  width: 45px;
+  height: 45px;
+  background-image: url("./../img/alarm-light.png");
+}
+
+/* phone */
+@media only screen and (max-width: 375px) {
+  .cards {
+    width: 100%;
+    padding: 35px 0 0 0;
+  }
+  .cards .container {
+    max-width: 305px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+  .cards .container .cards__itm {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards .container .cards__itm .cards__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards .container .cards__itm .cards__box .card {
+    margin-bottom: 35px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
