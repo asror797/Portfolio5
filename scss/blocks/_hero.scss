@@ -1,0 +1,119 @@
+.hero {
+  width: 100%;
+  // background-image: linear-gradient(45deg, #37BDA6,#CB1AE8);
+  font-family: 'poppins',sans-serif;
+  .hero__itm {
+    display: flex;
+    padding: 45px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    .hero__header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .hero__heading {
+        color: white;
+        font-size: 49px;
+        font-weight: 800;
+        letter-spacing: 0.1px;
+        margin-bottom: 17px;
+      }
+      .hero__title {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+      .header__btns1 {
+        display: none;
+        align-items: center;
+        margin-bottom: 7px;
+        a {
+          text-decoration: none;
+          padding: 9px 23px;
+          border: 1px solid white;
+          border-radius: 23px;
+          margin: 0 19px;
+        }
+      }
+    }
+    .banner {
+      width: 905px;
+      margin-bottom: 25px;
+    }
+    .header__btns {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      a {
+        text-decoration: none;
+        padding: 9px 23px;
+        border: 1px solid white;
+        border-radius: 23px;
+        margin: 0 19px;
+      }
+      .start {
+        background-color: white;
+        color: #112D57;
+      }
+      .try {
+        color: white;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width:375px) {
+  .hero {
+    width: 100%;
+    .container {
+      max-width: 375px;
+      margin: 0 auto;
+      padding: 0;
+      .hero__itm {
+        width: 100%;
+        padding: 35px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .hero__header {
+          .hero__heading {
+            font-size: 27px;
+            font-weight: 500;
+          }
+          .hero__title {
+            padding: 0 7px;
+            font-size: 15px;
+            font-weight: 400;
+          }
+          .header__btns1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a {
+              margin: 9px 0;
+              padding: 9px 39px;
+            }
+            .start {
+              background-color: white;
+              color: #112D57;
+            }
+            .try {
+              color: white;
+            }
+          }
+        }
+        .banner {
+          width: 295px;
+          margin-bottom: 19px;
+        }
+        .header__btns {
+          display: none;
+        }
+
+      }
+    }
+  }
+}
